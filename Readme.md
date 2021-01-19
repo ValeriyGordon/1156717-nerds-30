@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Валерий Зубанов](https://up.htmlacademy.ru/htmlcss/30/user/1156717).
-* Наставник: Борис Слонов.
+* Наставник: [Борис Слонов] (https://htmlacademy.ru/profile/slonov_boris)
 
 ---
 
