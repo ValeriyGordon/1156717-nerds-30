@@ -9,10 +9,10 @@
   <body>
     <header>
       <nav>
+        <a class="main-header-logo" href="#">
+          <img src="https://via.placeholder.com/150x100" alt="Логотип студии Nerds">
+        </a>
         <ul>
-          <a class="main-header-logo" href="#">
-            <img src="https://via.placeholder.com/150x100" alt="Логотип студии Nerds">
-          </a>
           <li><a href="#">студия</a></li>
           <li><a href="#">клиенты</a></li>
           <li><a href="catalog.html">магазин</a></li>
@@ -139,17 +139,15 @@
             <form action="https://echo.htmlacademy.ru" method="post">
               <p>
                 <label for="appointment-name">Ваше имя</label>
-              <input id="appointment-name" type="text" name="time" value=""
-              placeholder="Имя Фамилия">
+                <input id="appointment-name" type="text" name="time" value="" placeholder="Имя Фамилия">
               </p>
               <p>
                 <label for="appointment-e-mail">Ваш e-mail</label>
-              <input id="appointment-e-mail" type="mail" name="e-mail" value=""
-              placeholder="email@example.com">
+              <input id="appointment-e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
               </p>
               <p>
-                <p>Текст письма</p>
-              <textarea name="comment" id="comment-field" rows="5" cols="70" placeholder="В свободной форме"></textarea>
+                <label for="comment-field">Текст письма</label>
+                <textarea name="comment" id="comment-field" rows="5" cols="70" placeholder="В свободной форме"></textarea>
               </p>
               <button type="submit">Отправить</button>
             </form>
