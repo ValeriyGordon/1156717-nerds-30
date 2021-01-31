@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,66 +10,66 @@
     <title>Дизайн студия Nerds</title>
   </head>
 
-  <body>
-    <header>
-      <nav>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="/img/nerds-logo.png" width="166" height="66" alt="Логотип студии Nerds">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">студия</a></li>
           <li><a href="#">клиенты</a></li>
           <li><a href="catalog.html">магазин</a></li>
           <li><a href="#">контакты</a></li>
         </ul>
-        <a href="#">корзина</a>
+        <a class="cart" href="#">корзина</a>
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main class="container">
+      <section class="features">
         <h1 class="visually-hidden">Дизайн студия Nerds</h1>
-        <ul>
-          <li>
+        <ul class="features-list">
+          <li class="fearutes-item">
             <p>Долго, дорого, скрупулезно</p>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#">Узнать больше</a>
+            <a class="button features-button" href="#">Узнать больше</a>
             <img src="/img/nerds-index-slide1 1.png" width="760" height="431" alt="фотография трех смартфонов">
           </li>
-          <li>
+          <li class="fearutes-item">
             <p>Любим математику как никто другой</p>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <a href="#">Узнать больше</a>
+            <a class="button features-button" href="#">Узнать больше</a>
             <img src="/img/nerds-index-slide2 1.png" width="760" height="431" alt="фотография двух мониторов">
           </li>
-          <li>
+          <li class="fearutes-item">
             <p>Только ночь, только хардкор</p>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#">Узнать больше</a>
+            <a class="button features-button" href="#">Узнать больше</a>
             <img src="/img/nerds-index-slide3 1.png" width="760" height="431" alt="фотография планшета и смартфона">
           </li>
         </ul>
       </section>
 
-      <section>
-        <ul>
-          <li>
+      <section class="products">
+        <ul class="products-list">
+          <li class="producrts-item">
             <img src="/img/illustration-1 1.jpg" width="300" height="146" alt="иллюстрация с ноутбуком">
             <h2>Веб-сайты</h2>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button>Заказать</button>
+            <button class="button products-button button-red" type="button">Заказать</button>
           </li>
-          <li>
+          <li class="producrts-item">
             <img src="/img/illustration-2 1.jpg" width="300" height="146" alt="иллюстрация с приложениями на смартфонах">
             <h2>Приложения</h2>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button>Заказать</button>
+            <button class="button products-button button-green" type="button">Заказать</button>
           </li>
-          <li>
+          <li class="producrts-item">
             <img src="/img/illustration-3 1.jpg" width="300" height="146" alt="иллюстрация с презентацией">
             <h2>Презентации</h2>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button>Заказать</button>
+            <button class="button products-button button-yellow" type="button">Заказать</button>
           </li>
         </ul>
       </section>
@@ -128,14 +128,14 @@
         </ul>
       </section>
 
-      <section>                                                           <!--Секция с картой-->
+      <section class="contacts">                                                           <!--Секция с картой-->
         <img src="/img/map 1.jpg" width="1440" height="416"  alt="Карта с указанием адресса студии">
         <div>
           <h2>Nerds design studio</h2>
             <p>
               191186, Санкт-Петербург,<br>
               ул Б. Конюшенная, д. 19/8 <br>
-              Телефон: +7 (812) 275-75-75
+              Телефон: <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
             </p>
             <button>Обратная связь</button>
         </div>
@@ -144,11 +144,13 @@
             <form action="https://echo.htmlacademy.ru" method="post">
               <p>
                 <label for="appointment-name">Ваше имя</label>
-                <input id="appointment-name" type="text" name="time" value="" placeholder="Имя Фамилия">
+                <input id="appointment-name" type="text" name="time" value=""
+                placeholder="Имя Фамилия">
               </p>
               <p>
                 <label for="appointment-e-mail">Ваш e-mail</label>
-              <input id="appointment-e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
+                <input id="appointment-e-mail" type="email" name="e-mail" value=""
+                placeholder="email@example.com">
               </p>
               <p>
                 <label for="comment-field">Текст письма</label>
