@@ -1,143 +1,154 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/apple.png">
-    <link rel="manifest" href="manifest.webmanifest">
-    <title>Дизайн студия Nerds</title>
-  </head>
 
-  <body class="page-body">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.png" width="166" height="66" alt="Логотип студии Nerds">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="index.html">студия</a></li>
-          <li><a href="#">клиенты</a></li>
-          <li><a href="catalog.html">магазин</a></li>
-          <li><a href="#">контакты</a></li>
-        </ul>
-        <a class="cart" href="#">корзина</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Дизайн студия Nerds</title>
+</head>
 
-    <main class="container">
-      <section>
-        <h1>Магазин готовых шаблонов</h1>
-      </section>
-
-      <section>
-        <h2>Стоимость</h2>
-        <div>
-          <input type="range" min="0" max="15000" step="500" value="7500"><br>    <!-- тэг br временно для визуализации-->
-          <label>от<input name="min-price" type="text" value="0"></label>
-          <label>до<input name="max-price" type="text" value="15000"></label>
-        </div>
-
-        <h2>Сортировать</h2>
-          <ul>
-            <li><button type="button">По цене</button></li>
-            <li><button type="button">По типу</button></li>
-            <li><button type="button">По названию</button></li>
-          </ul>
-
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
-              <li>
-                <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
-              </li>
-              <li>
-                <input type="radio" name="grid" value="fixed" id="filter-fixed">
-                <label for="filter-fixed">Фиксированная</label>
-              </li>
-              <li>
-                <input type="radio" name="grid" value="flexible" id="filter-flexible">
-                <label for="filter-flexible">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset>
-            <legend>Особенности:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
-              </li>
-              <li>
-                <input type="checkbox" name="advantages" id="filter-advantages">
-                <label for="filter-advantages">Блок преимуществ</label>
-              </li>
-              <li>
-                <input type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
-              </li>
-              <li>
-                <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
-              </li>
-              <li>
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="submit">Показать</button>
-        </form>
-
-        <ul>
-          <li><a href="#"><img src="img/img-sedona 1.jpg" width="358" height="578" alt="пример сайта сделанного студией"></a></li>
-          <li><a href="#"><img src="img/img-pink 1.jpg" width="358" height="578" alt="пример сайта сделанного студией"></a></li>
-          <li><a href="#"><img src="img/img-barbershop 1.jpg" width="358" height="578" alt="пример сайта сделанного студией"></a></li>
-          <li><a href="#"><img src="img/Mask Group.jpg" width="358" height="578" alt="пример сайта сделанного студией"></a></li>
-          <li><a href="#"><img src="img/Mask Group-2.jpg" width="358" height="578" alt="пример сайта сделанного студией"></a></li>
-          <li><a href="#"><img src="img/Mask Group-1.jpg" width="358" height="578" alt="пример сайта сделанного студией"></a></li>
-        </ul>
-
-        <ul>
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
-        </ul>
-      </section>
-
-      <section class="contacts">                                                           <!--Секция с картой-->
-        <img src="img/map 1.jpg" width="1440" height="416"  alt="Карта с указанием адресса студии">
-        <div>
-          <h2>Nerds design studio</h2>
-            <p>
-              191186, Санкт-Петербург,<br>
-              ул Б. Конюшенная, д. 19/8 <br>
-              Телефон: <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
-            </p>
-            <button>Обратная связь</button>
-        </div>
-      </section>
-    </main>
-
-    <footer class="main-footer">
-      <ul>
-        <li>
-          <ul class="footer-social">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фэйсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
-          </ul>
-        </li>
-        <li>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </li>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/nerds-logo.png" width="166" height="66" alt="Логотип студии Nerds">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="index.html">студия</a></li>
+        <li><a href="#">клиенты</a></li>
+        <li><a href="catalog.html">магазин</a></li>
+        <li><a href="#">контакты</a></li>
       </ul>
-    </footer>
-  </body>
+      <a class="cart" href="#">корзина</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Магазин готовых шаблонов</h1>
+    </section>
+
+    <section>
+      <h2>Стоимость</h2>
+      <div>
+        <input type="range" min="0" max="15000" step="500" value="7500"><br> <!-- тэг br временно для визуализации-->
+        <label>от<input name="min-price" type="text" value="0"></label>
+        <label>до<input name="max-price" type="text" value="15000"></label>
+      </div>
+
+      <h2>Сортировать</h2>
+      <ul>
+        <li><button type="button">По цене</button></li>
+        <li><button type="button">По типу</button></li>
+        <li><button type="button">По названию</button></li>
+      </ul>
+
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="flexible" id="filter-flexible">
+              <label for="filter-flexible">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="advantages" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+
+      <ul>
+        <li><a href="#"><img src="img/img-sedona 1.jpg" width="358" height="578"
+              alt="пример сайта сделанного студией"></a></li>
+        <li><a href="#"><img src="img/img-pink 1.jpg" width="358" height="578"
+              alt="пример сайта сделанного студией"></a></li>
+        <li><a href="#"><img src="img/img-barbershop 1.jpg" width="358" height="578"
+              alt="пример сайта сделанного студией"></a></li>
+        <li><a href="#"><img src="img/Mask Group.jpg" width="358" height="578"
+              alt="пример сайта сделанного студией"></a></li>
+        <li><a href="#"><img src="img/Mask Group-2.jpg" width="358" height="578"
+              alt="пример сайта сделанного студией"></a></li>
+        <li><a href="#"><img src="img/Mask Group-1.jpg" width="358" height="578"
+              alt="пример сайта сделанного студией"></a></li>
+      </ul>
+
+      <ul>
+        <li><a>1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Следующая</a></li>
+      </ul>
+    </section>
+
+    <section class="contacts">
+      <!--Секция с картой-->
+      <img src="img/map 1.jpg" width="1440" height="416" alt="Карта с указанием адресса студии">
+      <div>
+        <h2>Nerds design studio</h2>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул Б. Конюшенная, д. 19/8 <br>
+          Телефон: <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <button>Обратная связь</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <ul>
+      <li>
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фэйсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </li>
+      <li>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>
