@@ -22,6 +22,17 @@
   font-style: normal;
 }
 
+:root {
+  --color-black-text: #000000;
+  --color-dark-text: #283136;
+  --color-gray-text: #444444;
+  --color-gray-light-text: #666666;
+  --color-white-text: #ffffff;
+
+  --color-bg-gray-light: #EEEEEE;                              /*bg - background*/
+}
+
+/*Global*/
 
 .page-body {
   min-width: 1440px;
