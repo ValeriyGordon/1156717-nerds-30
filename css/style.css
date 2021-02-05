@@ -64,6 +64,10 @@ img {
   height: auto;
 }
 
+.button {
+  border: 0;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -152,15 +156,9 @@ img {
   line-height: 18px;
   font-style: normal;
   font-weight: 500;
-
-  text-align: center;
+  text-transform: uppercase;
   color: var(--color-white-text);
   background-color: var(--color-red);
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 3px;
-  padding: 17px 54px 15px 54px;
 }
 
 .features-button:hover {
@@ -168,8 +166,162 @@ img {
 }
 
 .features-button:active {
-  color: #e26f72;
+  color: rgba(255,255,255,0.5);
 
   background-color: var(--color-red-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/*Products*/
+
+.products {
+  background-color: var(--color-bg-white);
+}
+
+.products-list {
+  list-style: none;
+}
+
+.products-item-title {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.products-item-subtitle {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*products button*/
+
+.producrts-item .button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--color-white-text);
+}
+
+.producrts-item .button-red {
+  background-color: var(--color-red);
+}
+
+.producrts-item .button-red:hover {
+  background-color: var(--color-red-medium);
+}
+
+.producrts-item .button-red:active {
+  color: rgba(255,255,255,0.5);
+
+  background-color: var(--color-red-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.producrts-item .button-green {
+  background-color: var(--color-green);
+}
+
+.producrts-item .button-green:hover {
+  background-color: var(--color-green-medium);
+}
+
+.producrts-item .button-green:active {
+  color: rgba(255,255,255,0.5);
+
+  background-color: var(--color-green-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.producrts-item .button-yellow {
+  background-color: var(--color-yellow);
+}
+
+.producrts-item .button-yellow:hover {
+  background-color: var(--color-yellow-medium);
+}
+
+.producrts-item .button-yellow:active {
+  color: rgba(255,255,255,0.5);
+
+  background-color: var(--color-yellow-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/*About*/
+.about {
+  background-color: var(--color-bg-white);
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-title {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-text {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-dark-text);
+}
+
+.about-subtitles {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--color-dark-text)
+}
+
+
+
+
+
+/*Partners*/
+
+.partners {
+  background-color: var(--color-bg-white);
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.logo-html-academy,
+.logo-borodinskyi,
+.logo-pink,
+.logo-mishka {
+  opacity: 0.2;
+}
+
+.logo-html-academy:hover,
+.logo-borodinskyi:hover,
+.logo-pink:hover,
+.logo-mishka:hover {
+  opacity: 1;
+}
+
+.logo-html-academy:active,
+.logo-borodinskyi:active,
+.logo-pink:active,
+.logo-mishka:active {
+  opacity: 0.1;
 }
