@@ -33,6 +33,7 @@
   --color-bg-gray-medium: #EAEAEA;
   --color-bg-gray-light: #EEEEEE;                              /*bg - background*/
   --color-bg-white: #ffffff;
+  --color-bg-blue: #4245ff;
 
   --color-red: #FB565A;
   --color-red-medium: #E74246;
@@ -182,6 +183,24 @@ img {
   list-style: none;
 }
 
+.products-web {
+  background-color: var(--color-red);
+  width: 300px;
+  height: 146px;
+}
+
+.products-apps {
+  background-color: var(--color-green);
+  width: 300px;
+  height: 146px;
+}
+
+.products-presentations {
+  background-color: var(--color-yellow);
+  width: 300px;
+  height: 146px;
+}
+
 .products-item-title {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 24px;
@@ -200,7 +219,7 @@ img {
 
 /*products button*/
 
-.producrts-item .button {
+.products-item .button {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -210,45 +229,45 @@ img {
   color: var(--color-white-text);
 }
 
-.producrts-item .button-red {
+.products-item .button-red {
   background-color: var(--color-red);
 }
 
-.producrts-item .button-red:hover {
+.products-item .button-red:hover {
   background-color: var(--color-red-medium);
 }
 
-.producrts-item .button-red:active {
+.products-item .button-red:active {
   color: rgba(255,255,255,0.5);
 
   background-color: var(--color-red-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.producrts-item .button-green {
+.products-item .button-green {
   background-color: var(--color-green);
 }
 
-.producrts-item .button-green:hover {
+.products-item .button-green:hover {
   background-color: var(--color-green-medium);
 }
 
-.producrts-item .button-green:active {
+.products-item .button-green:active {
   color: rgba(255,255,255,0.5);
 
   background-color: var(--color-green-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.producrts-item .button-yellow {
+.products-item .button-yellow {
   background-color: var(--color-yellow);
 }
 
-.producrts-item .button-yellow:hover {
+.products-item .button-yellow:hover {
   background-color: var(--color-yellow-medium);
 }
 
-.producrts-item .button-yellow:active {
+.products-item .button-yellow:active {
   color: rgba(255,255,255,0.5);
 
   background-color: var(--color-yellow-dark);
@@ -291,9 +310,58 @@ img {
   color: var(--color-dark-text)
 }
 
+.about-list-item h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--color-black-text);
+}
 
+/*services-list*/
 
+.services-list {
+  list-style: none;
+}
 
+.services-list-item {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*Table*/
+
+.advantages th {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--color-black-text);
+}
+
+.advantages td {
+  font-family: "Roboto", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+color: var(--color-dark-text);
+}
+
+.percent {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+  color: var(--color-black-text);
+}
 
 /*Partners*/
 
@@ -325,3 +393,6 @@ img {
 .logo-mishka:active {
   opacity: 0.1;
 }
+
+/*contacts*/
+
