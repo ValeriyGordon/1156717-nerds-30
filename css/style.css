@@ -30,6 +30,8 @@
   --color-white-text: #ffffff;
   --color-red-text: #FB565A;
 
+  --color-border-gray-medium: #B4B9BB;
+  --color-border-gray: #d7d7de;
   --color-bg-gray: #E1E1E1;
   --color-bg-gray-medium: #EAEAEA;
   --color-bg-gray-light: #EEEEEE;                              /*bg - background*/
@@ -498,11 +500,11 @@ img {
 
 .modal input {
   border: none;
-  border: 1px solid #d7d7de;
+  border: 2px solid var(--color-border-gray);
 }
 
 .modal input:hover {
-  border-color: #B4B9BB;
+  border-color: var(--color-border-gray-medium);
 }
 
 .modal input:focus {
@@ -510,25 +512,47 @@ img {
 }
 
 .modal input:invalid {
+  color: var(--color-red-medium);
   border-color: var(--color-red-medium);
 }
 
+.modal input:hover::placeholder {
+  color: var(--color-gray-text);
+  opacity: 0.5;
+}
+
+.modal input:focus::placeholder {
+  color: var(--color-gray-text);
+}
+
+.modal input:invalid::placeholder {
+  color: var(--color-red-medium);
+}
+
 .modal textarea {
-  border-color: #d7dcde;
+  border: 2px solid var(--color-border-gray);
 }
 
 .modal textarea:hover {
-  border-color: #B4B9BB;
+  border-color: var(--color-border-gray-medium);
 }
 
 .modal textarea:focus {
   border-color: var(--color-black-text);
 }
 
+.modal textarea:focus::placeholder {
+  color: var(--color-gray-text);
+}
+
 .modal textarea:invalid {
   border-color: var(--color-red-medium);
 }
 
+.modal textarea:hover::placeholder {
+  color: var(--color-gray-text);
+  opacity: 0.5;
+}
 
 .modal-button {
   font-family: "Roboto", Arial, sans-serif;
@@ -569,14 +593,27 @@ img {
 }
 
 .social-button {
-  background: linear-gradient(0deg, var(--color-bg-gray), var(--color-bg-gray)), var(--color-bg-gray);
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 81px;
   height: 81px;
+  border-radius: 50%;
+  background-color: var(--color-bg-gray);
 }
 
-.social-button:hover  {
+.social-button:hover {
   background-color: var(--color-red-medium);
+}
+
+.social-button:active {
+  background-color: var(--color-red-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-button:active path {
+  fill: var(--color-bg-white);
+  opacity: 0.3;
 }
 
 .footer-title {
