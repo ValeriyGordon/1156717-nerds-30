@@ -30,6 +30,8 @@
   --color-white-text: #ffffff;
   --color-red-text: #FB565A;
 
+  --color-gray-gray: #a6a6a6;
+  --color-gray: #4d4d4d;
   --color-border-gray-medium: #B4B9BB;
   --color-border-gray: #d7d7de;
   --color-bg-gray: #E1E1E1;
@@ -38,6 +40,7 @@
   --color-bg-white: #ffffff;
   --color-bg-blue: #4245ff;
 
+  --color-brown: #231F20;
   --color-red: #FB565A;
   --color-red-medium: #E74246;
   --color-red-dark: #D7373B;
@@ -56,7 +59,9 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
-
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
 }
 
 a {
@@ -632,4 +637,107 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: var(--color-gray-text);
+}
+
+
+/*Catalog*/
+
+.catalog-title {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--color-black-text);
+  background-color: var(--color-bg-gray-light);
+  margin: 0;
+}
+
+/*Filters*/
+
+.filters h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--color-black-text);
+}
+
+.filters legend {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--color-black-text);
+  border: 0;
+}
+
+.filters ul {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+  color: var(--color-dark-text);
+}
+
+/*Checkbox, radio*/
+
+.filter-input-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.filter-input-checkbox+label::before {                      /*ДОДЕЛАТЬ ЧЕКБОКСЫ И РАДИОКНОПКИ!*/
+  content: '';
+  display: inline-block;
+  border: 2px solid var(--color-gray);
+  border-radius: 5px;
+  width: 23px;
+  height: 23px;
+  opacity: 0.4;
+  margin-right: 13px;
+}
+
+.filter-input-checkbox:checked+label::before {
+  background-image: url("../img/Shape.svg");
+  color: var(--color-gray);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter-input-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: var(--color-gray);
+}
+
+/*Catalog*/
+
+.catalog h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--color-black-text);
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.icon-down,
+.icon-up {
+  opacity: 0.2;
+}
+
+.icon-down:hover,
+.icon-up:hover {
+  opacity: 1;
 }
