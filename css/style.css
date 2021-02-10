@@ -732,12 +732,16 @@ img {
   list-style: none;
 }
 
-.icon-down,
-.icon-up {
+.icon-down path {
+  fill: #231f20;
+  opacity: 1;
+}
+
+.icon-up path {
+  fill: #a6a6a6;
   opacity: 0.2;
 }
 
-.icon-down:hover,
-.icon-up:hover {
-  opacity: 1;
+.icon-up:focus path {
+  fill: #a6a6a6;
 }
