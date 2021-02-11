@@ -49,15 +49,15 @@
           <legend>Сетка:</legend>
           <ul>
             <li>
-              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+              <input class="filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" name="grid" value="fixed" id="filter-fixed">
+              <input class="filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" name="grid" value="flexible" id="filter-flexible">
+              <input class="filter-input-radio" type="radio" name="grid" value="flexible" id="filter-flexible">
               <label for="filter-flexible">Резиновая</label>
             </li>
           </ul>
@@ -68,36 +68,36 @@
           <ul>
             <li>
               <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Слайдер</label>
+              <label class="filter-input-label" for="filter-slider">Слайдер</label>
             </li>
             <li>
               <input class="filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
-              <label for="filter-advantages">Блок преимуществ</label>
+              <label class="filter-input-label" for="filter-advantages">Блок преимуществ</label>
             </li>
             <li>
               <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
+              <label class="filter-input-label" for="filter-news">Новости</label>
             </li>
             <li>
               <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
+              <label class="filter-input-label" for="filter-gallery">Галерея</label>
             </li>
             <li>
               <input class="filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
+              <label class="filter-input-label" for="filter-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="form-button" type="submit">Показать</button>
       </form>
     </section>
 
     <section class="catalog">
       <h2>Сортировать</h2>
       <ul>
-        <li><button type="button">По цене</button></li>
-        <li><button type="button">По типу</button></li>
-        <li><button type="button">По названию</button></li>
+        <li><button class="catalog-button" type="button">По цене</button></li>
+        <li><button class="catalog-button" type="button">По типу</button></li>
+        <li><button class="catalog-button" type="button">По названию</button></li>
       </ul>
       <ul>
         <li><a class="icon-down"><span class="visually-hidden">Вниз</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
