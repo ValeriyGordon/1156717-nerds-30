@@ -38,9 +38,16 @@
   --color-bg-gray-dark: #d5d5d5;
   --color-gray-gray-medium: #dfdfdf;
   --color-border-gray-medium: #B4B9BB;
+  --color-border-gray: #DBDBDB;
   --color-gray-gray: #a6a6a6;
   --color-gray: #4d4d4d;
   --color-bg-blue: #4245ff;
+  --color-bg-light-blue: #82B3D3;
+  --color-bg-dark-blue: #2D3D4D;
+  --color-bg-black: #000000;
+  --color-bg-mint: #64D1BC;
+  --color-bg-indigo: #6551D6;
+  --color-bg-brown: #5E370A;
 
   --color-brown: #231F20;
   --color-red: #FB565A;
@@ -844,4 +851,106 @@ fieldset {
 .icon-down:active path,
 .icon-up:active path {
   fill: var(--color-brown);
+}
+
+.sedona {
+  background-color: var(--color-bg-light-blue);
+  width: 358px;
+  height: 578px;
+}
+
+.pink {
+  background-color: var(--color-bg-dark-blue);
+  width: 358px;
+  height: 578px;
+}
+
+.barbershop {
+  background-color: var(--color-bg-black);
+  width: 358px;
+  height: 578px;
+}
+
+.mishka {
+  background-color: var(--color-bg-mint);
+  width: 358px;
+  height: 578px;
+}
+
+.study {
+  background-color: var(--color-bg-indigo);
+  width: 358px;
+  height: 578px;
+}
+
+.kvast {
+  background-color: var(--color-bg-brown);
+  width: 358px;
+  height: 578px;
+}
+
+/*Pagination*/
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  display: flex;
+  text-align: center;
+}
+
+.pagination-item a {
+  background-color: var(--color-bg-gray-light);
+  width: 50px;
+  height: 50px;
+  margin: 11px;
+  border-radius: 3px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--color-black-text);
+
+}
+
+.pagination-item a:hover {
+  background-color: var(--color-gray-gray-medium);
+}
+
+.pagination-item a:active {
+  background-color: var(--color-bg-gray-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item-current,
+.pagination-item-current:hover,
+.pagination-item-current:active {
+  box-shadow: none;
+  color: var(--color-black-text);
+  background-color: var(--color-bg-white);
+  border: 3px solid var(---color-border-gray);
+}
+
+.pagination-next a {
+  background-color: var(--color-bg-gray-light);
+  border-radius: 3px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--color-black-text);
+}
+
+.pagination-next a:hover {
+  background-color: var(--color-gray-gray-medium);
+}
+
+.pagination-next a:active {
+  background-color: var(--color-bg-gray-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
 }
