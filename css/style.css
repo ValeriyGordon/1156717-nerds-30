@@ -982,7 +982,6 @@ fieldset {
   width: 50px;
   height: 50px;
   border-radius: 3px;
-  text-align: center;
 }
 
 .pagination-list .pagination-item:hover {
