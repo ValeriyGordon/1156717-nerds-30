@@ -63,14 +63,26 @@
 
 /*Global*/
 
-.page-body {
-  min-width: 1440px;
+body {
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
+  color: var(--color-black-text);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.container {
+  width: 1157px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 a {
@@ -97,9 +109,28 @@ img {
   margin: -1px;
 }
 
+/*Grid*/
+
+.page {
+  height: 100%;
+}
+
 /* Main navigation */
 
+.main-header {
+  padding-top: 49px;
+  margin-bottom: 80px;
+  background-color: var(--color-bg-gray-light);
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  margin-right: 202px;
+}
+
 .main-navigation {
+  display: grid;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -110,12 +141,19 @@ img {
   background-color: transparent;
 }
 
-.main-header {
-  background-color: var(--color-bg-gray-light);
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr min-content;
+  width: 1157px;
+  margin: 0 auto;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*User navigation*/
@@ -198,29 +236,43 @@ img {
 /*Products*/
 
 .products {
+  margin-bottom: 80px;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
   background-color: var(--color-bg-white);
 }
 
 .products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .products-web {
+  margin-left: 0;
   background-color: var(--color-red);
   width: 300px;
   height: 146px;
 }
 
 .products-apps {
+  margin-left: 0;
   background-color: var(--color-green);
   width: 300px;
   height: 146px;
 }
 
 .products-presentations {
+  margin-left: 0;
   background-color: var(--color-yellow);
   width: 300px;
   height: 146px;
+}
+
+.products-item {
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
 }
 
 .products-item-title {
@@ -229,6 +281,7 @@ img {
   line-height: 30px;
   font-style: normal;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .products-item-subtitle {
@@ -431,7 +484,6 @@ img {
   background-color: var(--color-bg-gray-medium);
   width: 1440px;
   height: 416px;
-  margin-left: 0;
 }
 
 .address {
@@ -651,7 +703,6 @@ img {
   line-height: 22px;
   color: var(--color-gray-text);
 }
-
 
 /*Catalog*/
 
