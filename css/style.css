@@ -80,7 +80,7 @@ body {
 }
 
 .container {
-  width: 1157px;
+  width: 1159px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -144,7 +144,7 @@ img {
 .main-navigation-wrapper {
   display: grid;
   grid-template-columns: max-content 1fr min-content;
-  width: 1157px;
+  width: 1159px;
   margin: 0 auto;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
@@ -236,6 +236,7 @@ img {
 /*Products*/
 
 .products {
+  width: 1100px;
   margin-bottom: 80px;
   outline: 5px solid rgba(255, 0, 0 , 0.3);
   background-color: var(--color-bg-white);
@@ -243,36 +244,43 @@ img {
 
 .products-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px 300px;
   column-gap: 100px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.products-item {
+  margin: 0 auto;
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+}
+
 .products-web {
-  margin-left: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
   background-color: var(--color-red);
   width: 300px;
   height: 146px;
 }
 
 .products-apps {
-  margin-left: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
   background-color: var(--color-green);
   width: 300px;
   height: 146px;
 }
 
 .products-presentations {
-  margin-left: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
   background-color: var(--color-yellow);
   width: 300px;
   height: 146px;
-}
-
-.products-item {
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
 }
 
 .products-item-title {
@@ -282,6 +290,8 @@ img {
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
+  min-width: 173px;
+  margin-bottom: 16px;
 }
 
 .products-item-subtitle {
@@ -290,6 +300,8 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  min-width: 260px;
+  margin-bottom: 32px;
 }
 
 /*products button*/
@@ -354,10 +366,16 @@ img {
 
 /*About*/
 .about {
+  border-top: 2px solid var(--color-bg-gray-light);
+  margin-top: 73px;
   background-color: var(--color-bg-white);
 }
 
 .about-list {
+  display: grid;
+  grid-template-columns: 651px 360px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -373,6 +391,8 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  width: 651px;
+  margin-right: 153px;
 }
 
 .about-text {
@@ -480,11 +500,12 @@ img {
 
 /*contacts*/
 
-.contacts-img {
-  background-color: var(--color-bg-gray-medium);
+/*.contacts-img {
   width: 1440px;
   height: 416px;
-}
+  margin: 0 auto;
+  background-color: var(--color-bg-gray-medium);
+}*/
 
 .address {
   background-color: var(--color-bg-white);
