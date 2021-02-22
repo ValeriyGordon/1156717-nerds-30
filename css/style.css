@@ -365,15 +365,38 @@ img {
 }
 
 /*About*/
+
+.about::before {
+  display: block;
+  content: "";
+  width: 1158px;
+  height: 2px;
+  background-color: var(--color-bg-gray-light);
+  position: relative;
+  left: 0px;
+  margin-bottom: 39px;
+}
+
 .about {
-  border-top: 2px solid var(--color-bg-gray-light);
-  margin-top: 73px;
+  width: 1174px;
   background-color: var(--color-bg-white);
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.column-text {
+  width: 665px;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  margin-right: 135px;
+}
+
+.column-img {
+  width: 374px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
 }
 
 .about-list {
   display: grid;
-  grid-template-columns: 651px 360px;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -383,6 +406,8 @@ img {
   background-color: var(--color-bg-blue);
   width: 360px;
   height: 208px;
+  margin: 0;
+  padding: 0;
 }
 
 .about-title {
@@ -391,8 +416,7 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  width: 651px;
-  margin-right: 153px;
+  margin-bottom: 32px;
 }
 
 .about-text {
@@ -402,6 +426,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--color-dark-text);
+  margin-bottom: 40px;
 }
 
 .about-subtitles {
@@ -411,10 +436,11 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: var(--color-dark-text)
+  color: var(--color-dark-text);
+  margin-bottom: 23px;
 }
 
-.about-list-item h3 {
+.column-img h3 {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -422,6 +448,8 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--color-black-text);
+
+  margin: 39px 16px 48px;
 }
 
 /*services-list*/
@@ -436,6 +464,22 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 39px;
+}
+
+.services-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.services-list-item::before {
+  display: block;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-red);
+  position: relative;
+  left: -40px;
+  top: 13px;
 }
 
 /*Table*/
