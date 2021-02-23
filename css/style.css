@@ -381,6 +381,7 @@ img {
   width: 1174px;
   background-color: var(--color-bg-white);
   outline: 5px solid rgba(255, 0, 0, 0.7);
+  margin-bottom: 73px;
 }
 
 .column-text {
@@ -448,7 +449,6 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--color-black-text);
-
   margin: 39px 16px 48px;
 }
 
@@ -513,12 +513,73 @@ img {
 
 /*Partners*/
 
+.partners::before {
+  display: block;
+  content: "";
+  width: 1158px;
+  height: 2px;
+  background-color: var(--color-bg-gray-light);
+  position: relative;
+  left: 0px;
+  margin-bottom: 46px;
+}
+
+.partners::after {
+  display: block;
+  content: "";
+  width: 1158px;
+  height: 2px;
+  background-color: var(--color-bg-gray-light);
+  position: relative;
+  left: 0px;
+  margin-top: 44px;
+}
+
 .partners {
+  width: 1158px;
+  margin-bottom: 44px;
   background-color: var(--color-bg-white);
+  outline: 5px solid rgba(3, 126, 3, 0.7);
 }
 
 .partners-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1117px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  outline: 5px solid rgba(243, 69, 150, 0.7);
+}
+
+.logo-html-academy {
+  width: 199px;
+  height: 68px;
+  margin-left: 32px;
+  outline: 5px solid rgb(219, 17, 17);
+}
+
+.logo-borodinskyi {
+  width: 209px;
+  height: 90px;
+  margin-left: 95px;
+  outline: 5px solid rgb(219, 17, 17);
+}
+
+.logo-pink {
+  width: 185px;
+  height: 52px;
+  margin-left: 104px;
+  outline: 5px solid rgb(219, 17, 17);
+}
+
+.logo-mishka {
+  width: 173px;
+  height: 84px;
+  margin-left: 120px;
+  outline: 5px solid rgb(219, 17, 17);
 }
 
 .logo-html-academy,
@@ -716,15 +777,33 @@ img {
 /*main-footer*/
 
 .main-footer {
+
   background-color: var(--color-bg-white);
+  outline: 5px solid rgb(219, 17, 17);
+  outline-offset: -5px;
 }
 
 .footer-list {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  margin: 68px auto;
   list-style: none;
 }
 
 .footer-social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  width: 261px;
+  outline: 5px solid rgb(36, 247, 17);
   list-style: none;
+}
+
+.friendly-discount {
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgb(17, 32, 247);
 }
 
 .social-button {
