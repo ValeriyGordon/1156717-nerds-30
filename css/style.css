@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: "Roboto", Arial, sans-serif;
   src: url(../fonts/roboto.woff2);
   src: url(../fonts/roboto.woff);
@@ -20,7 +20,7 @@
   src: url(../fonts//robotobold.woff);
   font-weight: bold;
   font-style: normal;
-}
+}*/
 
 :root {
   --color-black-text: #000000;
@@ -83,6 +83,8 @@ body {
   width: 1157px;
   margin: 0 auto;
   padding: 0 10px;
+  outline: 5px solid rgb(55, 0, 255);
+  outline-offset: -5px;
 }
 
 a {
@@ -119,17 +121,12 @@ img {
 
 .main-header {
   padding: 49px 0 0;
-  margin-bottom: 0;
+  margin: 0;
   background-color: var(--color-bg-gray-light);
 
 }
 
-.main-header-logo {
-  margin-right: 202px;
-}
-
 .main-navigation {
-  display: grid;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -142,16 +139,23 @@ img {
 
 .main-navigation-wrapper {
   display: grid;
-  grid-template-columns: max-content 1fr min-content;
+  grid-template-columns: 160px 1fr min-content;
+  align-items: center;
   width: 1159px;
   margin: 0 auto;
+}
 
-
+.main-header-logo {
+  order: 0;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 437px;
   list-style: none;
   margin: 0;
+  margin-left: 202px;
   padding: 0;
 }
 
@@ -192,11 +196,12 @@ img {
 .features-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .fearutes-item {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr auto;
 }
@@ -831,7 +836,6 @@ img {
 /*main-footer*/
 
 .main-footer {
-
   background-color: var(--color-bg-white);
   outline: 5px solid rgb(219, 17, 17);
   outline-offset: -5px;
@@ -915,6 +919,15 @@ img {
 
 /*Catalog*/
 
+.catalog-page {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+  margin-top: 55px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
 .catalog-title {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
@@ -924,6 +937,10 @@ img {
   color: var(--color-black-text);
   background-color: var(--color-bg-gray-light);
   margin: 0;
+  margin: 78px auto 108px;
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .catalog-button {
@@ -954,6 +971,14 @@ img {
 }
 
 /*Filters*/
+
+.filters {
+  width: 260px;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(255, 0, 255, 0.7);
+  outline-offset: -5px;
+}
 
 .filters h2 {
   font-family: "Roboto", Arial, sans-serif;
@@ -1086,6 +1111,13 @@ fieldset {
 
 /*Catalog*/
 
+.catalog {
+  width: 760px;
+  margin-left: 141px;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
 .catalog h2 {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
@@ -1118,6 +1150,35 @@ fieldset {
 }
 
 /*projects*/
+
+.item-management {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+}
+
+.item-management-button {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 266px;
+  padding: 0;
+  width: 272px;
+}
+
+.item-management-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+  margin-left: 47px;
+  padding: 0;
+}
+
+.projects {
+  margin: 0;
+  padding: 0;
+}
 
 .sedona {
   background-color: var(--color-bg-light-blue);
