@@ -380,6 +380,7 @@ img {
   color: var(--color-white-text);
   outline: none;
   padding: 17px 40px 15px 39px;
+  border-radius: 3px;
 }
 
 .products-item .button-red {
