@@ -972,6 +972,7 @@ img {
   grid-template-columns: 260px 1fr;
   align-content: start;
   margin-top: 55px;
+  margin-bottom: 60px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
 }
@@ -1351,7 +1352,16 @@ fieldset {
 /*Pagination*/
 
 .pagination-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 443px;
   list-style: none;
+}
+
+.pagination-item {
+  margin-right: 11px;
 }
 
 .pagination-list .pagination-item {
