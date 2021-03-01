@@ -80,7 +80,7 @@ body {
 }
 
 .container {
-  width: 1157px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
   outline: 5px solid rgb(55, 0, 255);
@@ -147,12 +147,14 @@ img {
 }
 
 .main-header-logo {
+  width: 160px;
   order: 0;
 }
 
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 437px;
   list-style: none;
   margin: 0;
@@ -691,18 +693,24 @@ img {
 
 /*contacts*/
 
-/*.contacts-img {
-  width: 1440px;
-  height: 416px;
+.map {
+  position: relative;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
   background-color: var(--color-bg-gray-medium);
-}*/
+}
 
-.address {
+.contacts {
+  position: absolute;
+  top: 52px;
+  left: 131px;
+  width: 319px;
+  height: 308px;
   background-color: var(--color-bg-white);
 }
 
-.address h2 {
+.contacts h2 {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -710,15 +718,24 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--color-black-text);
+  padding-top: 49px;
+  margin-left: 50px;
 }
 
-.address p {
+.address {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  margin-top: 23px;
+  margin-left: 50px;
   color: var(--color-gray-light-text);
+}
+
+.phone {
+  margin-top: 14px;
+  margin-left: 50px;
 }
 
 .contacts-phone {
@@ -741,6 +758,10 @@ img {
   background-color: var(--color-red);
   vertical-align: middle;
   text-align: center;
+  margin-left: 50px;
+  margin-top: 17px;
+  padding: 17px 44px 15px;
+  border-radius: 3px;
   border: none;
   outline: none;
 }
@@ -1205,12 +1226,27 @@ fieldset {
 .projects {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 760px;
+
+}
+
+.projects-item {
+  width: 358px;
+  margin-right: 42px;
+  margin-bottom: 31px;
+}
+
+.projects-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .sedona {
   background-color: var(--color-bg-light-blue);
   width: 358px;
-  height: 578px;
+  height: 577px;
 }
 
 .pink {
