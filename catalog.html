@@ -45,14 +45,16 @@
     <div class="catalog-page container">
       <section class="filters">
         <h2>Стоимость</h2>
-        <div>
-          <input type="range" min="0" max="15000" step="500" value="7500"><br> <!-- тэг br временно для визуализации-->
-          <label>от<input name="min-price" type="text" value="0"></label>
-          <label>до<input name="max-price" type="text" value="15000"></label>
+        <div class="min-max-price">
+          <input class="input-area" type="range" min="0" max="15000" step="500" value="7500">
+          <div class="input-price">
+            <label><span class="label-text">от</span><input class="price-area" name="min-price" type="text" value="0"></label>
+            <label><span class="label-text">до</span><input class="price-area" name="max-price" type="text" value="15000"></label>
+          </div>
         </div>
 
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="grid">
             <legend>Сетка:</legend>
             <ul>
               <li>
@@ -70,7 +72,7 @@
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="options">
             <legend>Особенности:</legend>
             <ul>
               <li>
