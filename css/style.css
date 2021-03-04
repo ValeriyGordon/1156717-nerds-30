@@ -72,7 +72,6 @@ body {
   font-weight: normal;
   line-height: 24px;
   color: var(--color-black-text);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -83,8 +82,6 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
-  outline: 5px solid rgb(55, 0, 255);
-  outline-offset: -5px;
 }
 
 a {
@@ -124,6 +121,7 @@ img {
   padding-top: 49px;
   margin: 0;
   background-color: var(--color-bg-gray-light);
+  outline: 4px solid #00BC6C;
 
 }
 
@@ -169,8 +167,6 @@ img {
   max-width: 115px;
   padding-left: 40px;
   padding-top: 10px;
-  outline: 5px solid rgb(255, 0, 140);
-  outline-offset: -5px;
 }
 
 .cart {
@@ -186,6 +182,12 @@ img {
   background-repeat: no-repeat;
   height: 15px;
   width: 15px;
+}
+
+.cart::before:active {
+  background-image: url(../img/cart-icon.svg);
+  background-color: var(--color-gray-gray);
+  opacity: 1;
 }
 
 .site-navigation a,
@@ -219,6 +221,8 @@ img {
 }
 
 .features-list {
+  position: relative;
+  height: 422px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -284,17 +288,16 @@ img {
 
 .features-button:active {
   color: rgba(255,255,255,0.5);
-
   background-color: var(--color-red-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .slider-gallery {
-  position: relative;
-  top: -25px;
-  left: -181px;
+  position: absolute;
+  top: -26px;
+  left: 357px;
   width: 760px;
-  height: 431px;
+
 }
 
 /*Products*/
@@ -302,7 +305,6 @@ img {
 .products {
   width: 1100px;
   margin-bottom: 80px;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
   background-color: var(--color-bg-white);
 }
 
@@ -317,7 +319,6 @@ img {
 
 .products-item {
   margin: 0 auto;
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
 }
 
 .products-web {
@@ -395,7 +396,6 @@ img {
 
 .products-item .button-red:active {
   color: rgba(255,255,255,0.5);
-
   background-color: var(--color-red-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -425,7 +425,6 @@ img {
 
 .products-item .button-yellow:active {
   color: rgba(255,255,255,0.5);
-
   background-color: var(--color-yellow-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -446,19 +445,16 @@ img {
 .about {
   width: 1174px;
   background-color: var(--color-bg-white);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  margin-bottom: 73px;
+  margin-bottom: 59px;
 }
 
 .column-text {
   width: 651px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
   margin-right: 149px;
 }
 
 .column-img {
   width: 374px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
 }
 
 .about-list {
@@ -561,6 +557,7 @@ img {
 .advantages dl {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 21px;
 }
 
 .advantages dd {
@@ -568,7 +565,7 @@ img {
   min-width: 98px;
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .advantages dd {
@@ -601,7 +598,7 @@ img {
 
 /*Partners*/
 
-.partners::before {
+/* .partners::before {
   display: block;
   content: "";
   width: 1158px;
@@ -620,17 +617,22 @@ img {
   background-color: var(--color-bg-gray-light);
   position: relative;
   left: 0px;
-  margin-top: 44px;
-}
+  margin-top: 49px;
+} */
 
 .partners {
   width: 1158px;
-  margin-bottom: 44px;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  min-height: 180px;
+  margin-bottom: 80px;
   background-color: var(--color-bg-white);
-  outline: 5px solid rgba(3, 126, 3, 0.7);
 }
 
 .partners-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -638,36 +640,63 @@ img {
   width: 1117px;
   margin: 0;
   padding: 0;
+  padding-top: 45px;
   list-style: none;
-  outline: 5px solid rgba(243, 69, 150, 0.7);
+}
+
+.partners-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-html-academy {
   width: 199px;
   height: 68px;
+  margin-top: 17px;
   margin-left: 32px;
-  outline: 5px solid rgb(219, 17, 17);
+}
+
+.first-element {
+  content: '';
+  position: absolute;
+  border-right: 2px solid var(--color-bg-gray-light);
+  height: 52px;
+  left: 279px;
+}
+
+.second-element {
+  content: '';
+  position: absolute;
+  border-right: 2px solid var(--color-bg-gray-light);
+  height: 52px;
+  left: 579px;
+}
+
+.third-element {
+  content: '';
+  position: absolute;
+  border-right: 2px solid var(--color-bg-gray-light);
+  height: 52px;
+  left: 879px;
 }
 
 .logo-borodinskyi {
   width: 209px;
   height: 90px;
   margin-left: 95px;
-  outline: 5px solid rgb(219, 17, 17);
 }
 
 .logo-pink {
   width: 185px;
   height: 52px;
   margin-left: 104px;
-  outline: 5px solid rgb(219, 17, 17);
 }
 
 .logo-mishka {
   width: 173px;
   height: 84px;
   margin-left: 120px;
-  outline: 5px solid rgb(219, 17, 17);
 }
 
 .logo-html-academy,
@@ -903,8 +932,6 @@ img {
 
 .main-footer {
   background-color: var(--color-bg-white);
-  outline: 5px solid rgb(219, 17, 17);
-  outline-offset: -5px;
 }
 
 .footer-list {
@@ -914,7 +941,6 @@ img {
   margin: 68px 0 68px 0;
   padding: 0;
   list-style: none;
-  outline: 5px solid rgb(247, 17, 197);
 }
 
 .footer-social {
@@ -923,7 +949,6 @@ img {
   margin: 0;
   padding: 0;
   width: 261px;
-  outline: 5px solid rgb(36, 247, 17);
   list-style: none;
 }
 
@@ -933,7 +958,6 @@ img {
   padding: 0;
   min-width: 660px;
   height: 68px;
-  outline: 5px solid rgb(17, 32, 247);
 }
 
 .social-button {
