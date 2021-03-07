@@ -46,7 +46,13 @@
       <section class="filters">
         <h2>Стоимость</h2>
         <div class="min-max-price">
-          <input class="input-area" type="range" min="0" max="15000" step="500" value="7500">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
           <div class="input-price">
             <label><span class="label-text">от</span><input class="price-area" name="min-price" type="text" value="0"></label>
             <label><span class="label-text">до</span><input class="price-area" name="max-price" type="text" value="15000"></label>
