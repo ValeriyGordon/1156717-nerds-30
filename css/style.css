@@ -38,7 +38,7 @@
   --color-bg-gray-dark: #d5d5d5;
   --color-gray-gray-medium: #dfdfdf;
   --color-border-gray-medium: #B4B9BB;
-  --color-border-gray: #DBDBDB;
+  --color-border-gray-medium: #DBDBDB;
   --color-gray-gray: #a6a6a6;
   --color-bg-gray-scale: #d7dcdf;
   --color-gray: #4d4d4d;
@@ -1597,19 +1597,13 @@ fieldset {
 
 .pagination-list {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 443px;
   list-style: none;
 }
 
-.pagination-item {
-  margin-right: 11px;
-}
-
-.pagination-list .pagination-item {
+.pagination-item a {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1618,46 +1612,44 @@ fieldset {
   color: var(--color-black-text);
   background-color: var(--color-bg-gray-light);
   display: block;
-  width: 50px;
-  height: 50px;
   border-radius: 3px;
+  margin-right: 11px;
+  padding: 17px 20px 15px;
 }
 
-.pagination-list .pagination-item:hover {
+.pagination-item-current a {
+  background-color: var(--color-bg-white);
+  border: 3px solid var(--color-border-gray-medium);
+}
+
+.pagination-item:not(:first-child) a:hover {
   background-color: var(--color-gray-gray-medium);
 }
 
-.pagination-list .pagination-item:active {
+.pagination-item:not(:first-child) a:active {
   background-color: var(--color-bg-gray-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination-list .pagination-item-current,
-.pagination-list .pagination-item-current:hover,
-.pagination-list .pagination-item-current:active {
-  box-shadow: none;
-  color: var(--color-black-text);
-  background-color: var(--color-bg-white);
-  border: 3px solid var(---color-border-gray);
-}
-
-.pagination-list .pagination-next {
-  background-color: var(--color-bg-gray-light);
-  border-radius: 3px;
+ .pagination-next a {
+  display: block;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  background-color: var(--color-bg-gray-light);
+  border-radius: 3px;
   color: var(--color-black-text);
+  padding: 17px 89px 15px;
 }
 
-.pagination-list .pagination-next:hover {
+.pagination-next a:hover {
   background-color: var(--color-gray-gray-medium);
 }
 
-.pagination-list .pagination-next:active {
+.pagination-next a:active {
   background-color: var(--color-bg-gray-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
