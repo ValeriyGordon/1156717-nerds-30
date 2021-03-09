@@ -1064,38 +1064,8 @@ img {
   line-height: 55px;
   color: var(--color-black-text);
   background-color: var(--color-bg-gray-light);
-  margin: 0;
-  margin: 78px auto 108px;
+  margin: 68px auto 108px;
   text-align: center;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-
-.catalog-button {
-  font-family: "Roboto", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  border: 0;
-  outline: 0;
-  background-color: transparent;
-}
-
-.catalog-button {
-  color: var(--color-black-text);
-  opacity: 0.3;
-}
-
-.catalog-button:hover {
-  color: var(--color-black-text);
-  opacity: 0.6;
-}
-
-.catalog-button:active, .catalog-button:focus {
-  color: var(--color-black-text);
-  opacity: 1;
 }
 
 /*Filters*/
@@ -1373,6 +1343,7 @@ fieldset {
 /*Catalog*/
 
 .catalog {
+  position: relative;
   width: 760px;
   margin-left: 141px;
   outline: 5px solid rgba(0, 255, 255, 0.7);
@@ -1388,6 +1359,8 @@ fieldset {
   text-transform: uppercase;
   color: var(--color-black-text);
   margin: 0;
+  margin-right: 266px;
+  padding: 0;
 }
 
 .catalog ul {
@@ -1415,20 +1388,57 @@ fieldset {
 
 .item-management {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0;
-  margin-bottom: 88px;
   padding: 0;
+  margin-bottom: 88px;
 }
 
 .item-management-button {
   display: flex;
   justify-content: flex-start;
-  margin-left: 266px;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-left: 266px;
   width: 272px;
+}
+
+.item-management-button button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.catalog-button {
+  margin-right: 25px;
+}
+
+.catalog-button:last-child {
+  margin-right: 0;
+}
+
+.catalog-button {
+  color: var(--color-black-text);
+  opacity: 0.3;
+}
+
+.catalog-button:hover {
+  color: var(--color-black-text);
+  opacity: 0.6;
+}
+
+.catalog-button:active, .catalog-button:focus {
+  color: var(--color-black-text);
+  opacity: 1;
 }
 
 .item-management-icon {
@@ -1442,12 +1452,12 @@ fieldset {
 
 .projects {
   margin: 0;
+  margin-bottom: 54px;
   padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 760px;
-
 }
 
 .projects-item {
@@ -1455,6 +1465,11 @@ fieldset {
   width: 358px;
   margin-right: 42px;
   margin-bottom: 72px;
+}
+
+.study,
+.kvast {
+  margin-bottom: 0;
 }
 
 .sedona::before,
@@ -1536,12 +1551,23 @@ fieldset {
 /*price modal*/
 
 .price-modal-item {
+  display: none;
   width: 360px;
   height: 231px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   background: var(--color-bg-gray-light);
 }
 
-.price-modal-item h3 {
+.price-modal-current {
+  display: block;
+  position: absolute;
+  top: 467px;
+  left: 0;
+}
+
+.price-modal-title {
+  display: block;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1549,27 +1575,35 @@ fieldset {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--color-black-text);
+  margin-top: 26px;
+  margin-left: 145px;
 }
 
-.price-modal-item h3:hover {
+.price-modal-title:hover {
   color: var(--color-red);
 }
 
-.price-modal-item h3:active {
+.price-modal-title:active {
   color: var(--color-black-text);
   opacity: 0.3;
 }
 
-.price-modal-item p{
+.price-modal-subtitle {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  text-align: center;
   color: var(--color-gray-light-text);
+  width: 255px;
+  padding: 0;
+  margin-left: 50px;
+  margin-top: 12px;
 }
 
-.price-modal-item button {
+.price-modal-button {
+  display: block;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1578,17 +1612,20 @@ fieldset {
   text-transform: uppercase;
   color: var(--color-bg-white);
   background-color: var(--color-red);
-  vertical-align: middle;
+  border-radius: 3px;
   text-align: center;
   border: none;
   outline: none;
+  padding: 17px 72px 15px;
+  margin-top: 32px;
+  margin-left: 80px;
 }
 
-.price-modal-item button:hover {
+.price-modal-button:hover {
   background-color: var(--color-red-medium);
 }
 
-.price-modal-item button:active {
+.price-modal-button:active {
   background-color: var(--color-red-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -1639,6 +1676,7 @@ fieldset {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   background-color: var(--color-bg-gray-light);
   border-radius: 3px;
   color: var(--color-black-text);
