@@ -38,7 +38,7 @@
   --color-bg-gray-dark: #d5d5d5;
   --color-gray-gray-medium: #dfdfdf;
   --color-border-gray-medium: #B4B9BB;
-  --color-border-gray-medium: #DBDBDB;
+  --color-border-gray-light: #DBDBDB;
   --color-gray-gray: #a6a6a6;
   --color-bg-gray-scale: #d7dcdf;
   --color-gray: #4d4d4d;
@@ -1655,8 +1655,12 @@ fieldset {
 }
 
 .pagination-item-current a {
+  box-sizing: border-box;
+  border: 3px solid var(--color-border-gray-light);
+  border-radius: 3px;
   background-color: var(--color-bg-white);
-  border: 3px solid var(--color-border-gray-medium);
+  /* outline: 3px solid var(--color-border-gray-medium);
+  outline-offset: -3px; */
 }
 
 .pagination-item:not(:first-child) a:hover {
@@ -1680,7 +1684,7 @@ fieldset {
   background-color: var(--color-bg-gray-light);
   border-radius: 3px;
   color: var(--color-black-text);
-  padding: 17px 89px 15px;
+  padding: 17px 77px 15px 78px;
 }
 
 .pagination-next a:hover {
