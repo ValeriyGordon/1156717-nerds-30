@@ -122,8 +122,6 @@ img {
   padding-top: 49px;
   margin: 0;
   background-color: var(--color-bg-gray-light);
-  outline: 4px solid #00BC6C;
-
 }
 
 .main-navigation {
@@ -1052,8 +1050,16 @@ img {
   padding: 0;
   margin-top: 55px;
   margin-bottom: 60px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+}
+
+.inner-page-logo:hover {
+  color: var(--color-bg-black);
+  opacity: 0.7;
+}
+
+.inner-page-logo:active {
+  color: var(--color-bg-black);
+  opacity: 0.3;
 }
 
 .catalog-title {
@@ -1074,8 +1080,6 @@ img {
   width: 260px;
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .filters h2 {
@@ -1188,7 +1192,7 @@ img {
   border: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 }
 
 .filters .grid {
@@ -1215,7 +1219,7 @@ img {
 }
 
 .grid li {
-  margin-bottom: 9px;
+  margin-bottom: 19px;
 }
 
 .grid li:last-child {
@@ -1228,15 +1232,19 @@ fieldset {
 
 /*Checkbox, radio*/
 
-.filter-input-radio {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+.label-radio {
+  padding-left: 36px;
 }
 
-.filter-input-radio+label::before {                      /*ДОДЕЛАТЬ ЧЕКБОКСЫ И РАДИОКНОПКИ!*/
-  content: '';
-  position: relative;
+.filter-input-radio {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio {
+  position: absolute;
   display: inline-block;
   box-sizing: border-box;
   border: 4px solid var(--color-gray);
@@ -1244,51 +1252,60 @@ fieldset {
   width: 25px;
   height: 25px;
   opacity: 0.4;
-  margin-right: 11px;
-  top: 7px;
+  margin-top: -4px;
+  margin-left: -36px;
 }
 
-.filter-input-radio:checked+label::before {
-  background-image: url("../img/Oval.svg");
+.filter-input-radio:checked + .radio {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 9 9' fill='none'%3E%3Cpath d='M4.5 9C6.98528 9 9 6.98528 9 4.5C9 2.01472 6.98528 0 4.5 0C2.01472 0 0 2.01472 0 4.5C0 6.98528 2.01472 9 4.5 9Z' fill='%234D4D4D'/%3E%3C/svg%3E");
   color: var(--color-gray);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.filter-input-radio+label:hover::before {
+.filter-input-radio:hover + .radio {
   border-color: var(--color-gray);
   opacity: 1;
 }
 
-.filter-input-radio:disabled+label::before {
+.filter-input-radio:focus + .radio {
   border-color: var(--color-gray);
-  opacity: 0.3;
+  opacity: 1;
+}
+
+.filter-input-radio:disabled + .radio {
+  border-color: var(--color-gray);
+  color: var(--color-dark-text);
+  opacity: 0.1;
+}
+
+.label-checkbox {
+  padding-left: 36px;
 }
 
 .filter-input-checkbox {
   position: absolute;
-  z-index: -1;
-  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.filter-input-checkbox+label::before {                      /*ДОДЕЛАТЬ ЧЕКБОКСЫ И РАДИОКНОПКИ!*/
-  content: '';
-  position: relative;
+.checkbox {
+  position: absolute;
   box-sizing: border-box;
   display: inline-block;
   border: 2px solid var(--color-gray);
   border-radius: 3px;
   width: 23px;
   height: 23px;
-  top: 6px;
   opacity: 0.4;
-  margin-right: 13px;
+  margin-top: -4px;
+  margin-left: -36px;
 }
 
-.filter-input-checkbox:checked+label::before {
-  content: '';
-  position: relative;
-  background-image: url(../img/checkbox-on.svg);
+.filter-input-checkbox:checked + .checkbox {
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='23' viewBox='0 0 25 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.95925 8.48591L4.25684 11.3149L11.6916 19.0979L25.0002 5.16591L22.2988 2.33691L11.6916 13.4389L6.95925 8.48591Z' fill='%234D4D4D'/%3E%3Cpath d='M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z' fill='%234D4D4D'/%3E%3C/svg%3E%0A");
   width: 25px;
   height: 23px;
   border: none;
@@ -1297,14 +1314,14 @@ fieldset {
   background-position: 0px 0px;
 }
 
-.filter-input-checkbox+label:hover::before {
+.filter-input-checkbox:hover + .checkbox {
   border-color: var(--color-gray);
   opacity: 1;
 }
 
-.filter-input-checkbox:disabled+label::before {
+.filter-input-checkbox:focus+ .checkbox {
   border-color: var(--color-gray);
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .options {
@@ -1324,11 +1341,11 @@ fieldset {
   border: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .options li {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .options li:last-child {
@@ -1366,8 +1383,6 @@ fieldset {
   position: relative;
   width: 760px;
   margin-left: 141px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .catalog h2 {
@@ -1446,17 +1461,18 @@ fieldset {
   margin-right: 0;
 }
 
-.catalog-button {
+.selected {
   color: var(--color-black-text);
   opacity: 0.3;
 }
 
-.catalog-button:hover {
+.selected:hover {
   color: var(--color-black-text);
   opacity: 0.6;
 }
 
-.catalog-button:active, .catalog-button:focus {
+.selected:active,
+.selected:focus {
   color: var(--color-black-text);
   opacity: 1;
 }
@@ -1587,7 +1603,6 @@ fieldset {
 }
 
 .price-modal-title {
-  display: block;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1595,8 +1610,10 @@ fieldset {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--color-black-text);
-  margin-top: 26px;
-  margin-left: 145px;
+  margin: 26px 144px 12px 145px;
+  /* margin-top: 26px;
+  margin-bottom: 5px;
+  margin-left: 145px; */
 }
 
 .price-modal-title:hover {
@@ -1617,9 +1634,11 @@ fieldset {
   text-align: center;
   color: var(--color-gray-light-text);
   width: 255px;
+  height: 37px;
   padding: 0;
+  margin: 0;
   margin-left: 50px;
-  margin-top: 12px;
+  margin-bottom: 32px;
 }
 
 .price-modal-button {
@@ -1637,8 +1656,7 @@ fieldset {
   border: none;
   outline: none;
   padding: 17px 72px 15px;
-  margin-top: 32px;
-  margin-left: 80px;
+  margin-left: 79px;
 }
 
 .price-modal-button:hover {
@@ -1675,13 +1693,8 @@ fieldset {
 }
 
 .pagination-item-current a {
-  /* box-sizing: border-box; */
-  /* border: 3px solid var(--color-border-gray-light);
-  border-radius: 3px;
-  padding: 14px 17px 12px; */
+  box-shadow: inset 0 0 0 2px var(--color-border-gray-light);
   background-color: var(--color-bg-white);
-  outline: 3px solid var(--color-border-gray-light);
-  outline-offset: -3px;
 }
 
 .pagination-item:not(:first-child) a:hover {
