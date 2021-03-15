@@ -25,7 +25,7 @@
             <img class="inner-page-logo" src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Nerds">
           </a>
           <ul class="site-navigation">
-            <li class="site-navigation-item"><a class="site-navigation-link" href="index.html">студия</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">студия</a></li>
             <li class="site-navigation-item"><a class="site-navigation-link" href="#">клиенты</a></li>
             <li class="site-navigation-item"><a class="site-navigation-link">магазин</a></li>
             <li class="site-navigation-item"><a class="site-navigation-link" href="#">контакты</a></li>
@@ -35,37 +35,37 @@
           </div>
         </div>
       </nav>
-      <section class="page-title">
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-      </section>
     </div>
   </header>
 
   <main>
+
+    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+
     <div class="catalog-page container">
       <section class="filters">
-        <h2>Стоимость:</h2>
-        <div class="min-max-price">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar" style="
-              width: 70%;
+        <form method="get" action="https://echo.htmlacademy.ru" target="blank">
+          <h2>Стоимость:</h2>
+          <div class="min-max-price">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="
+                width: 70%;
+                "></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="
+              left: 5%;
+              "></div>
+              <div class="toggle toggle-max" tabindex="0" style="
+              left: 60%;
               "></div>
             </div>
-            <div class="toggle toggle-min" tabindex="0" style="
-            left: 5%;
-            "></div>
-            <div class="toggle toggle-max" tabindex="0" style="
-            left: 60%;
-            "></div>
+            <div class="input-price">
+              <label><span class="label-text">от</span><input class="price-area" name="min-price" type="text" value="0"></label>
+              <label><span class="label-text">до</span><input class="price-area" name="max-price" type="text" value="15000"></label>
+            </div>
           </div>
-          <div class="input-price">
-            <label><span class="label-text">от</span><input class="price-area" name="min-price" type="text" value="0"></label>
-            <label><span class="label-text">до</span><input class="price-area" name="max-price" type="text" value="15000"></label>
-          </div>
-        </div>
 
-        <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="grid">
             <legend class="grid-legend">Сетка:</legend>
             <ul>
@@ -159,52 +159,54 @@
 
         <ul class="projects">
           <li class="projects-item sedona"><a href="#"><img src="img/img-sedona 1.jpg" width="358" height="578"
-                alt="пример сайта сделанного студией"></a></li>
+              alt="Сайт города Седона, на котором можно заказать гостиницу"></a>
+              <div class="price-modal-item price-modal-current">
+                <h3 class="price-modal-title"><a>SEDONA</a></h3>
+                <p class="price-modal-subtitle">Информационный сайт<br> для туристов</p>
+                <button class="price-modal-button" type="button">9 900 &#8381;</button>
+              </div>
+            </li>
           <li class="projects-item pink"><a href="#"><img src="img/img-pink 1.jpg" width="358" height="578"
-                alt="пример сайта сделанного студией"></a></li>
+              alt="Сайт приложения Пинк для редактирования фотографий"></a>
+              <div class="price-modal-item">
+                <h3 class="price-modal-title"><a>Pink App</a></h3>
+                <p class="price-modal-subtitle">Продуктовый лендинг<br> приложения для iOS и Android</p>
+                <button class="price-modal-button" type="button">9 900 &#8381;</button>
+              </div>
+              </li>
           <li class="projects-item barbershop"><a href="#"><img src="img/img-barbershop 1.jpg" width="358" height="578"
-                alt="пример сайта сделанного студией"></a></li>
+              alt="Сайт барбершопа Бородинский"></a>
+              <div class="price-modal-item">
+                <h3 class="price-modal-title"><a>Barbershop</a></h3>
+                <p class="price-modal-subtitle">Сайт салона красоты.<br> Для мужчин, да.</p>
+                <button class="price-modal-button" type="button">9 900 &#8381;</button>
+              </div>
+              </li>
           <li class="projects-item mishka"><a href="#"><img src="img/Mask Group.jpg" width="358" height="578"
-                alt="пример сайта сделанного студией"></a></li>
+              alt="Интернет-магазин Мишка, в котором можно купить вязанные игрушки"></a>
+              <div class="price-modal-item">
+                <h3 class="price-modal-title"><a>MISHKA</a></h3>
+                <p class="price-modal-subtitle">Интернет-магазин<br> вязаных игрушек</p>
+                <button class="price-modal-button" type="button">9 900 &#8381;</button>
+              </div>
+              </li>
           <li class="projects-item study"><a href="#"><img src="img/Mask Group-2.jpg" width="358" height="578"
-                alt="пример сайта сделанного студией"></a></li>
+              alt="А Плюс, лэндинг курсов повышения квалификации"></a>
+              <div class="price-modal-item">
+                <h3 class="price-modal-title"><a>A Plus</a></h3>
+                <p class="price-modal-subtitle">Лендинг курсов повышения<br> квалификации</p>
+                <button class="price-modal-button" type="button">9 900 &#8381;</button>
+              </div>
+              </li>
           <li class="projects-item kvast"><a href="#"><img src="img/Mask Group-1.jpg" width="358" height="578"
-                alt="пример сайта сделанного студией"></a></li>
+              alt="Кваст, промо-сайт крафтового кваса"></a>
+              <div class="price-modal-item">
+                <h3 class="price-modal-title"><a>Кваст</a></h3>
+                <p class="price-modal-subtitle">Промо-сайт производителя<br> крафтового кваса</p>
+                <button class="price-modal-button" type="button">9 900 &#8381;</button>
+              </div>
+              </li>
         </ul>
-
-        <ul class="price-modal">
-          <li class="price-modal-item price-modal-current">
-              <h3 class="price-modal-title"><a>SEDONA</a></h3>
-              <p class="price-modal-subtitle">Информационный сайт<br> для туристов</p>
-              <button class="price-modal-button" type="button">9 900 ₽</button>
-          </li>
-          <li class="price-modal-item">
-            <a><h3>Pink App</h3></a>
-            <p>Продуктовый лендингприложения для iOS и Android</p>
-            <button type="button">9 900</button>
-          </li>
-          <li class="price-modal-item">
-            <a><h3>Barbershop</h3></a>
-            <p>Сайт салона красоты.Для мужчин, да.</p>
-            <button type="button">9 900</button>
-          </li>
-          <li class="price-modal-item">
-            <a><h3>MISHKA</h3></a>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <button type="button">9 900</button>
-          </li>
-          <li class="price-modal-item">
-            <a><h3>A Plus</h3></a>
-            <p>Лендинг курсов повышения квалификации</p>
-            <button type="button">9 900</button>
-          </li>
-          <li class="price-modal-item">
-            <a><h3>КВАСТ</h3></a>
-            <p>Промо-сайт производителякрафтового кваса</p>
-            <button type="button">9 900</button>
-          </li>
-        </ul>
-
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
@@ -214,8 +216,8 @@
       </section>
     </div>
 
-    <section class="map">                                                            <!--Секция с картой-->
-      <img src="img/map 1.jpg" width="1440" height="416" alt="Карта с указанием адресса студии">
+    <section class="map">
+      <img src="img/map 1.jpg" width="1440" height="416" alt="Адрес студии. Санкт-Петербург, улица Большая Конюшенная, дом 19, копус 8">
       <div class="container">
         <div class="contacts">
           <h2>NЁRDS DESIGN STUDIO</h2>
@@ -236,7 +238,7 @@
         <ul class="footer-list">
           <li>
             <ul class="footer-social">
-              <li><a class="social-button"><span class="visually-hidden">Вконтакте</span><svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+              <li><a class="social-button" type="button"><span class="visually-hidden">Вконтакте</span><svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
                 <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
                 </svg></a>
               </li>
@@ -257,26 +259,28 @@
       </div>
     </footer>
 
-    <section class="modal modal-letter">                                                            <!--модальное окно с формой отправки-->
-      <h2>Напишите нам</h2>
-      <form class="modal-letter-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-form-container">
-          <p class="appointment-item modal-name">
-            <label for="appointment-name">Ваше имя</label>
-            <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p class="appointment-item modal-email">
-            <label for="appointment-e-mail">Ваш e-mail</label>
-            <input id="appointment-e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
-          </p>
-          <p class="appointment-item modal-text">
-            <label for="comment-field">Текст письма</label>
-            <textarea name="comment" id="comment-field" rows="5" cols="70" placeholder="В свободной форме"></textarea>
-          </p>
-        </div>
-        <button class="button modal-button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-closed" type="button" aria-label="Закрыть"></button>
+    <section class="modal">
+      <div class="modal-letter">
+        <h2>Напишите нам</h2>
+        <form class="modal-letter-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal-form-container">
+            <p class="appointment-item modal-name">
+              <label for="appointment-name">Ваше имя:</label>
+              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="appointment-item modal-email">
+              <label for="appointment-e-mail">Ваш email:</label>
+              <input id="appointment-e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
+            </p>
+            <p class="appointment-item modal-text">
+              <label for="comment-field">Текст письма:</label>
+              <textarea name="comment" id="comment-field" rows="5" cols="70" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
+          <button class="button modal-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-closed" type="button" aria-label="Закрыть"></button>
+      </div>
     </section>
   </main>
 </body>

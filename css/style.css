@@ -31,7 +31,7 @@
   --color-red-text: #FB565A;
 
   --color-bg-gray-medium: #EAEAEA;
-  --color-bg-gray-light: #EEEEEE;                              /*bg - background*/
+  --color-bg-gray-light: #EEEEEE;
   --color-bg-white: #ffffff;
   --color-border-gray: #d7d7de;
   --color-bg-gray: #E1E1E1;
@@ -96,7 +96,6 @@ img {
 
 .button {
   border: 0;
-  outline: none;
   text-align: center;
   vertical-align: middle;
 }
@@ -629,30 +628,6 @@ img {
   color: var(--color-black-text);
 }
 
-/*Partners*/
-
-/* .partners::before {
-  display: block;
-  content: "";
-  width: 1158px;
-  height: 2px;
-  background-color: var(--color-bg-gray-light);
-  position: relative;
-  left: 0px;
-  margin-bottom: 46px;
-}
-
-.partners::after {
-  display: block;
-  content: "";
-  width: 1158px;
-  height: 2px;
-  background-color: var(--color-bg-gray-light);
-  position: relative;
-  left: 0px;
-  margin-top: 49px;
-} */
-
 .partners {
   width: 1158px;
   margin: 0;
@@ -844,7 +819,6 @@ img {
   padding: 17px 44px 15px;
   border-radius: 3px;
   border: none;
-  outline: none;
 }
 
 .contacts-button:hover {
@@ -861,40 +835,32 @@ img {
 
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background-color: var(--color-bg-white);
-}
-
-.modal-letter {
   top: 50%;
   left: 50%;
   margin-left: -480px;
-    margin-top: -295px;
-  /* bottom:180px; */
-  width: 960px;
-  height: 590;
-  padding-top: 65px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-bottom: 82px;
+  margin-top: -295px;
+  max-width: 960px;
+  height: 590px;
+  background-color: var(--color-bg-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+ .modal-letter {
+  width: 761px;
+  height: 443px;
+  margin: 63px 100px 84px;
 }
 
 .modal-letter h2 {
   padding: 0;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .modal-form-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 761px;
   margin: 0;
   padding: 0;
   }
@@ -903,7 +869,11 @@ img {
   padding: 0;
   margin: 0;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
+}
+
+.appointment-item:last-child {
+  margin-bottom: 46px;
 }
 
 .modal-name input {
@@ -912,8 +882,8 @@ img {
   width: 360px;
   padding: 0;
   margin: 0;
-  margin-top: 9px;
-  padding: 16px 14px 16px 16px;
+  margin-top: 6px;
+  padding: 14px 14px 12px 14px;
 }
 
 .modal-email input {
@@ -922,8 +892,8 @@ img {
   width: 360px;
   padding: 0;
   margin: 0;
-  margin-top: 9px;
-  padding: 16px 14px 16px 16px;
+  margin-top: 6px;
+  padding: 14px 14px 12px 14px;
 }
 
 .modal-text textarea {
@@ -931,10 +901,9 @@ img {
   box-sizing: border-box;
   width: 760px;
   height: 118px;
-
-  margin-top: 9px;
-  padding-top: 16px;
-  padding-left: 16px;
+  margin-top: 6px;
+  padding-top: 14px;
+  padding-left: 15px;
 }
 
 .modal-closed {
@@ -1042,8 +1011,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   border-radius: 3px;
-  margin-top: 47px;
-  padding: 17px 83px 15px;
+  padding: 17px 84px 15px;
   color: var(--color-bg-white);
   background-color: var(--color-red);
 }
@@ -1166,7 +1134,9 @@ img {
   line-height: 55px;
   color: var(--color-black-text);
   background-color: var(--color-bg-gray-light);
-  margin: 68px auto 108px;
+  margin: 0;
+  padding-top: 68px;
+  padding-bottom: 108px;
   text-align: center;
 }
 
@@ -1457,7 +1427,6 @@ fieldset {
   text-transform: uppercase;
   border: 0;
   border-radius: 3px;
-  outline: 0;
   padding: 17px 88px 15px 89px;
   background-color: var(--color-bg-gray-light);
   color: var(--color-black-text);
@@ -1694,7 +1663,7 @@ fieldset {
 .price-modal-current {
   display: block;
   position: absolute;
-  top: 467px;
+  top: 349px;
   left: 0;
 }
 
@@ -1706,10 +1675,8 @@ fieldset {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--color-black-text);
-  margin: 26px 144px 12px 145px;
-  /* margin-top: 26px;
-  margin-bottom: 5px;
-  margin-left: 145px; */
+  margin: 26px auto 12px;
+  text-align: center;
 }
 
 .price-modal-title:hover {
@@ -1750,9 +1717,8 @@ fieldset {
   border-radius: 3px;
   text-align: center;
   border: none;
-  outline: none;
   padding: 17px 72px 15px;
-  margin-left: 79px;
+  margin: 0 auto;
 }
 
 .price-modal-button:hover {
