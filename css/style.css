@@ -28,6 +28,7 @@
   --color-gray-text: #444444;
   --color-gray-light-text: #666666;
   --color-white-text: #ffffff;
+  --color-white-transparent: rgba(255, 255, 255, 0.5);
   --color-red-text: #FB565A;
 
   --color-bg-gray-medium: #EAEAEA;
@@ -60,6 +61,12 @@
   --color-yellow: #EFC849;
   --color-yellow-medium: #EAB534;
   --color-yellow-dark: #EAB534;
+
+  --color-shadow-black: rgba(0, 1, 1, 0.1);
+  --color-shadow-black-black: rgba(0, 0, 0, 0.15);
+  --color-sh-black: rgba(0, 1, 1, 0.25);
+  --color-black-gray: rgba(0, 0, 0, 0.3);
+  --color-shadow-gray: rgba(0, 0, 0, 0.4);
 }
 
 /*Global*/
@@ -294,9 +301,9 @@ img {
 }
 
 .features-button:active {
-  color: rgba(255,255,255,0.5);
+  color: var(--color-white-transparent);
   background-color: var(--color-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 .slider-gallery {
@@ -413,7 +420,6 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   color: var(--color-white-text);
-  outline: none;
   padding: 17px 40px 15px 39px;
   border-radius: 3px;
 }
@@ -427,9 +433,9 @@ img {
 }
 
 .products-item .button-red:active {
-  color: rgba(255,255,255,0.5);
+  color: var(--color-white-transparent);
   background-color: var(--color-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 .products-item .button-green {
@@ -441,10 +447,9 @@ img {
 }
 
 .products-item .button-green:active {
-  color: rgba(255,255,255,0.5);
-
+  color: var(--color-white-transparent);
   background-color: var(--color-green-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 .products-item .button-yellow {
@@ -456,9 +461,9 @@ img {
 }
 
 .products-item .button-yellow:active {
-  color: rgba(255,255,255,0.5);
+  color: var(--color-white-transparent);
   background-color: var(--color-yellow-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 /*About*/
@@ -826,14 +831,15 @@ img {
 }
 
 .contacts-button:active {
-  color: rgba(255,255,255,0.5);
+  color: var(--color-white-transparent);
   background-color: var(--color-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 /*Modal*/
 
 .modal {
+  display: block;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -842,7 +848,11 @@ img {
   max-width: 960px;
   height: 590px;
   background-color: var(--color-bg-white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--color-shadow-gray);
+}
+
+.closed {
+  display: none;
 }
 
  .modal-letter {
@@ -913,7 +923,6 @@ img {
   width: 21px;
   height: 21px;
   border: 0;
-  outline: 0;
   cursor: pointer;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21' fill='none'%3E%3Cpath d='M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z' fill='%23FB565A'/%3E%3C/svg%3E");
   opacity: 0.3;
@@ -1021,9 +1030,9 @@ img {
 }
 
 .modal-button:active {
-  color: rgba(255,255,255,0.5);
+  color: var(--color-white-transparent);
   background-color: var(--color-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 /*main-footer*/
@@ -1074,7 +1083,7 @@ img {
 
 .social-button:active {
   background-color: var(--color-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 .social-button:active path {
@@ -1199,7 +1208,7 @@ img {
   border-radius: 50%;
   border: 8px solid var(--color-bg-white);
   background-color: var(--color-bg-gray-scale);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 1px var(--color-shadow-black-black);
 }
 
 .range-controls .toggle-min {
@@ -1437,9 +1446,9 @@ fieldset {
 }
 
 .form-button:active {
-  color: rgba(0,0,0, .3);
+  color: var(--color-black-gray);
   background: var(--color-bg-gray-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 /*Catalog*/
@@ -1646,7 +1655,7 @@ fieldset {
 .mishka:hover,
 .study:hover,
 .kvast:hover {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px var(--color-sh-black);
 }
 
 /*price modal*/
@@ -1727,7 +1736,7 @@ fieldset {
 
 .price-modal-button:active {
   background-color: var(--color-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
 }
 
 /*Pagination*/
@@ -1765,8 +1774,8 @@ fieldset {
 
 .pagination-item:not(:first-child) a:active {
   background-color: var(--color-bg-gray-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
+  color: var(--color-black-gray);
 }
 
  .pagination-next a {
@@ -1789,6 +1798,6 @@ fieldset {
 
 .pagination-next a:active {
   background-color: var(--color-bg-gray-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0px var(--color-shadow-black);
+  color: var(--color-black-gray);
 }
