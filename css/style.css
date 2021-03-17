@@ -222,7 +222,7 @@ img {
 .features {
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 79px;
   background-color: var(--color-bg-gray-light);
 }
 
@@ -256,7 +256,7 @@ img {
 
 .fearutes-item-title {
   display: block;
-  margin-top: 67px;
+  margin-top: 68px;
   margin-bottom: 27px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 55px;
@@ -269,7 +269,7 @@ img {
 .fearutes-item-subtitle {
   margin: 0;
   padding: 0;
-  margin-bottom: 52px;
+  margin-bottom: 38px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -420,7 +420,7 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   color: var(--color-white-text);
-  padding: 17px 40px 15px 39px;
+  padding: 17px 41px 15px 39px;
   border-radius: 3px;
 }
 
@@ -517,7 +517,7 @@ img {
   font-size: 45px;
   line-height: 45px;
   margin-top: 35px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .about-text {
@@ -538,7 +538,7 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--color-dark-text);
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 
 .advantages h3 {
@@ -737,26 +737,31 @@ img {
 
 .map {
   position: relative;
-  max-width: 100%;
-  min-width: 1160px;
-  height: auto;
+  width: 100%;
+  height: 416px;
   margin: 0 auto;
 }
 
-.map::after {
-  content: '';
+.map-google {
   position: absolute;
-  background-image: url(../img/map-marker\ 1.png);
-  width: 231px;
-  height: 190px;
-  top: 80px;
-  left: 765px;
+  width: 100%;
+  height: 416px;
+  left: 0;
+  top: 0;
+}
+
+.map-image {
+  display: block;
+  height: 416px;
+  object-fit: cover;
+  width: 100%;
+  z-index: -10;
 }
 
 .contacts {
   position: absolute;
-  top: 52px;
-  left: 131px;
+  top: 54px;
+  left: 95px;
   width: 319px;
   height: 308px;
   background-color: var(--color-bg-white);
@@ -770,7 +775,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--color-black-text);
-  margin-top: 49px;
+  margin-top: 48px;
   margin-left: 50px;
 }
 
@@ -839,7 +844,7 @@ img {
 /*Modal*/
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1045,7 +1050,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 68px 0 68px 0;
+  margin: 67px 0 67px 0;
   padding: 0;
   list-style: none;
 }
@@ -1562,10 +1567,10 @@ fieldset {
 
 .projects {
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 760px;
 }
@@ -1764,7 +1769,7 @@ fieldset {
 }
 
 .pagination-item-current a {
-  box-shadow: inset 0 0 0 2px var(--color-border-gray-light);
+  box-shadow: inset 0 0 0 3px var(--color-border-gray-light);
   background-color: var(--color-bg-white);
 }
 
